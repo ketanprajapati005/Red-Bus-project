@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #1d1d1d;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.red {
+  color: #d8444d;
+}
+
+.borderSelected {
+  border-bottom: 3px solid #d8444d;
+}
+
+.boxShadow {
+  -webkit-box-shadow: -2px 20px 12px -2px rgba(198, 198, 198, 0.66);
+  box-shadow: -2px 20px 12px -2px rgba(198, 198, 198, 0.66);
+}
+
+.navbar {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.routes {
+  height: 90%;
+  width: 22%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.paths {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.routeOption {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.routeOptionText {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+.pathsContainer {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.pathsContainer:hover {
+  background-color: rgb(221, 236, 252);
+}
+.searchBuses {
+  background-image: url("https://s3.rdbuz.com/Images/responsiveweb/HomeBanner.webp");
+  height: 30vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+.heading {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.searchBusContainer {
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: -25%;
+  left: 15%;
+  height: 50%;
+  width: 70%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.SearchBusesButton {
+  position: absolute;
+  bottom: -30%;
+  left: 42.5%;
+  height: 15%;
+  width: 15%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 4%;
+  padding-right: 4%;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: #d8444d;
+  color: white;
+}
+
+.checkDestination {
+  border: 1px solid black;
+  height: 50%;
+  width: 70%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.womenOption {
+  border: 1px solid black;
+  height: 50%;
+  width: 20%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.checkDestinationoption {
+  border: 0.5px solid black;
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.checkDestinationoption > p {
+  margin-left: 5px;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The track */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s;
+}
+
+/* The circular slider */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: grey;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Toggled state */
+.toggle-switch input:checked + .slider {
+  background-color: #d8444d;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.rootForTrains {
+  /* border: 1px solid red; */
+  margin-top: 13vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.bookTrainContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.bookTrainContainer > .text > p {
+  font-size: 0.7rem;
+  color: #6b6969;
+}
+.trainsOptions {
+  height: 10vh;
+  width: 100%;
+  background-color: #fafafa;
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.trainsOptions > .option1 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainsOptions > .option1 > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 30%;
+  margin: 5px;
+  border-radius: 15px;
+  border: 0.5px solid red;
+  background-color: white;
+}
+
+.trainsOptions > .option2 {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.trainsOptions > .option2 > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 30%;
+  margin: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: pink;
+  font-weight: 900;
+}
